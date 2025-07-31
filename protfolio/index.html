@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Modern Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="contact-btn">Let's Talk</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Hi! I Am <span class="highlight"></span>Chinmay</h1>
+                <p>I design and develop experiences that make people's lives simpler through Web and Mobile apps.</p>
+                <div class="cta-buttons">
+                    <a href="assets/cv.pdf" download="Chinmayjagadev_Dash_CV.pdf" class="cta-btn" id="download-cv">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <button class="cta-btn secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="assets/chinu.jpeg" alt="Developer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title" data-aos="fade-up">My Awesome Services</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Transform your ideas into reality with clean and efficient code.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Custom Website Development</li>
+                    <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                    <li><i class="fas fa-check"></i> API Integration</li>
+                    <li><i class="fas fa-check"></i> Performance Optimization</li>
+                </ul>
+                <div class="service-cta">
+                    <span class="service-price">Starting at 7000</span>
+                    <button class="service-btn" onclick="openServiceModal('web')">Learn More</button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Create beautiful and intuitive user experiences.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> User Interface Design</li>
+                    <li><i class="fas fa-check"></i> User Experience Design</li>
+                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                    <li><i class="fas fa-check"></i> Prototyping</li>
+                </ul>
+                <div class="service-cta">
+                    <span class="service-price">Starting at 5000</span>
+                    <button class="service-btn" onclick="openServiceModal('design')">Learn More</button>
+                </div>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Apps</h3>
+                <p>Build responsive and dynamic mobile applications.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> iOS Development</li>
+                    <li><i class="fas fa-check"></i> Android Development</li>
+                    <li><i class="fas fa-check"></i> Cross-platform Apps</li>
+                    <li><i class="fas fa-check"></i> App Store Optimization</li>
+                </ul>
+                <div class="service-cta">
+                    <span class="service-price">Starting at 6000</span>
+                    <button class="service-btn" onclick="openServiceModal('mobile')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notification Container -->
+    <div class="notification-container"></div>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-right">
+                <h3>Frontend Development</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Bootstrap</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-left">
+                <h3>Backend Development</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>JAVA</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>Oracle</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 82%"></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-info">
+                            <span>MongoDB</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="skill-progress" style="width: 87%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title" data-aos="fade-up">Recent Projects</h2>
+        <div class="projects-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100" data-category="web">
+                <div class="project-card-front">
+                    <img src="blood donation.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>E-Blood hub</h3>
+                        <p>Blood donation platform</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Javascript</span>
+                            <span class="project-tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-back">
+                    <h3>E-Blood hub Platform</h3>
+                    <p>A modern blood hub platform that people normaly accept the blood and give.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Github</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200" data-category="mobile">
+                <div class="project-card-front">
+                    <img src="images (2).jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>TODO List</h3>
+                        <p>Web aplliction for list of work</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS5</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-back">
+                    <h3>Todo list</h3>
+                    <p>Todo list is for the remeber the work for do in the time</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">github</a>
+                        <a href="#" class="project-link">Play Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="300" data-category="design">
+                <div class="project-card-front">
+                    <img src="assets/port.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio design</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-back">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern and responsive portfolio website with smooth animations and dark mode support.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">github</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>chinmayjagdevd@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+918249228744</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Bhubaneswar,Odisha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/chinmay8018"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chinmayjagdev-dash-6b5723227/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/ChinmayjagdevD2?t=_jxb346Zl6vPO-cQCJ4g4w&s=08"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
