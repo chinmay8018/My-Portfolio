@@ -1,0 +1,98 @@
+// Data: Skills for the 3D orbit scene
+// Two rings — inner (core stack) and outer (additional tools)
+
+export const skills = [
+  // ── Inner ring ──────────────────────────────────────────────
+  {
+    id: 'react',
+    name: 'React.js',
+    color: '#61dafb',
+    glowColor: 'rgba(97, 218, 251, 0.5)',
+    icon: '⚛',
+    description: 'Component-driven UI development',
+    ring: 'inner',
+  },
+  {
+    id: 'dotnet',
+    name: '.NET',
+    color: '#7c6af7',
+    glowColor: 'rgba(124, 106, 247, 0.5)',
+    icon: '⬡',
+    description: 'Robust back-end APIs & services',
+    ring: 'inner',
+  },
+  {
+    id: 'javascript',
+    name: 'JavaScript',
+    color: '#f7df1e',
+    glowColor: 'rgba(247, 223, 30, 0.5)',
+    icon: 'JS',
+    description: 'Dynamic, interactive behaviour',
+    ring: 'inner',
+  },
+  {
+    id: 'typescript',
+    name: 'TypeScript',
+    color: '#3178c6',
+    glowColor: 'rgba(49, 120, 198, 0.5)',
+    icon: 'TS',
+    description: 'Type-safe JavaScript at scale',
+    ring: 'inner',
+  },
+
+  // ── Outer ring ──────────────────────────────────────────────
+  {
+    id: 'swagger',
+    name: 'Swagger',
+    color: '#85ea2d',
+    glowColor: 'rgba(133, 234, 45, 0.5)',
+    icon: '📋',
+    description: 'API documentation & testing',
+    ring: 'outer',
+  },
+  {
+    id: 'html5',
+    name: 'HTML5',
+    color: '#f06529',
+    glowColor: 'rgba(240, 101, 41, 0.5)',
+    icon: '🔷',
+    description: 'Semantic structure & accessibility',
+    ring: 'outer',
+  },
+  {
+    id: 'css3',
+    name: 'CSS3',
+    color: '#38bdf8',
+    glowColor: 'rgba(56, 189, 248, 0.5)',
+    icon: '🎨',
+    description: 'Animations, layouts & styling',
+    ring: 'outer',
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    color: '#f05033',
+    glowColor: 'rgba(240, 80, 51, 0.5)',
+    icon: '⑂',
+    description: 'Version control & collaboration',
+    ring: 'outer',
+  },
+  {
+    id: 'sql',
+    name: 'SQL',
+    color: '#00adef',
+    glowColor: 'rgba(0, 173, 239, 0.5)',
+    icon: '🗃',
+    description: 'Relational databases & queries',
+    ring: 'outer',
+  },
+  {
+    id: 'php',
+    name: 'PHP',
+    color: '#a78bdb',
+    glowColor: 'rgba(167, 139, 219, 0.5)',
+    icon: '🐘',
+    description: 'Server-side scripting & web',
+    ring: 'outer',
+  },
+]
